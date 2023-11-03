@@ -3,9 +3,9 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   name: podinfo
-  namespace: apps
+  namespace: prospeccao-stage
 spec:
   interval: 1m0s
   ref:
     branch: openshift
-  url: https://github.com/sabre1041/flux-podinfo
+  url: https://github.com/bsmelo/flux-podinfo
