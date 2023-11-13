@@ -3,12 +3,12 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
   name: podinfo
-  namespace: prospeccao-stage
+  namespace: testeflux-stage
 spec:
   interval: 1m0s
   path: ./kustomize
   prune: true
-  targetNamespace: prospeccao-stage
+  targetNamespace: testeflux-stage
   serviceAccountName: cicd
   sourceRef:
     kind: GitRepository

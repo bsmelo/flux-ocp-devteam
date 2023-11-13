@@ -1,0 +1,13 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: repo-podinfo
+  namespace: testeflux-stage
+spec:
+  interval: 1m0s
+  ref:
+    branch: poc
+  url: https://gitlab.tjdft.jus.br/prospeccao/flux-app-podinfo
+  secretRef:
+    name: gl-groupdeploytoken-prospeccao
